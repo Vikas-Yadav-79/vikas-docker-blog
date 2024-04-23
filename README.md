@@ -1,5 +1,5 @@
 # vikas-docker-blog
-# Running Three Tier Application using Docker
+<p style="color: #666;">Running Three Tier Application using Docker</p>
 
 To run Three Tier Application using Docker, we need to first create a Full Stack Project. We can use any of our Full Stack Project but if we don't have one then we can use someone else project also. Here, I have used a very easy simple project on GitLab. The link to this project is https://gitlab.com/nanuchi/developing-with-docker. This project is made using HTML, CSS, JavaScript, Express and MongoDB. 
 
