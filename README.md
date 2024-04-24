@@ -33,7 +33,8 @@ Here, the __mongo__ image will be automatically pull from the DockerHub to run t
 Here, the container with name __*vikasmongo-express*__ is made to connect the MongoDB Database with the Frontend of the project in Docker. As explained above, the container will run on *8081 port*. The environment variables Username and Password are passed of the MongoDB to access the Database along with the container name of the MongoDB in the Server Environment variable. The container will be running on the same network as the above container.
 
 - Now, open the link in your browser ```localhost:8081``` and create two databases __my-db__ and __user-accounts__.
-   ![image](https://github.com/Karans2100/Docker-Blog/assets/104305073/46c49839-8d83-49c1-8640-3fe39ef0299f)
+   ![new_image](https://github.com/Vikas-Yadav-79/vikas-docker-blog/assets/121033913/b8a1ebaa-da65-423f-9f6d-6f238965084d)
+
 
 Creating these two databases is necessary as the Frontend will be requiring these while running. Also, we need to change the MongoDB URL mentioned in the ```server.js``` file as we will be running MongoDB using Docker instead of Local Machine.
 
@@ -62,12 +63,18 @@ CMD ["node", "server.js"]```
 The execution of the above command will generate a Docker Image with name __21bcp379-assignment__ and it will take some time for it. After the Image is created we need to Run it as a Docker Container.
 
 - To run the Image as a Docker Container run the command <br> ```docker run -d -p 3000:3000 --network=mongo-network --name=21bcp379-app 21bcp379-assignment```
-- 
+
 
 After the above command is executed, it will run a Docker Container in *detachable mode* with name __21bcp379-assignment__ in the same network. 
 
 - Now, open the following link on you browser ```localhost:3000``` and you will see a webpage running.
   
+- To push the Docker Image of the project run the command <br> ```docker tag 21bcp377-project karan2100/21bcp377-project-image``` and then ```docker push karan2100/21bcp377-project-image```
+    ![WhatsApp Image 2024-04-24 at 10 44 22](https://github.com/Vikas-Yadav-79/vikas-docker-blog/assets/121033913/7359981a-5ee5-4647-8161-f8d3ab5172bc)
+
+
+Here, change __karan2100__ with your Dockerhub username and __21bcp377-project-image__ with your Dockerhub Repository name.
+
   
 
 
