@@ -69,12 +69,14 @@ After the above command is executed, it will run a Docker Container in *detachab
 
 - Now, open the following link on you browser ```localhost:3000``` and you will see a webpage running.
   
-- To push the Docker Image of the project run the command <br> ```docker tag 21bcp377-project karan2100/21bcp377-project-image``` and then ```docker push karan2100/21bcp377-project-image```
+- To push the Docker Image of the project run the command <br> ```docker tag 21bcp379-app vikas79/blog-app-21bcp379``` and then ```docker push vikas79/blog-app-21bcp379```
     ![WhatsApp Image 2024-04-24 at 10 44 22](https://github.com/Vikas-Yadav-79/vikas-docker-blog/assets/121033913/7359981a-5ee5-4647-8161-f8d3ab5172bc)
 
+    - ![WhatsApp Image 2024-04-24 at 11 42 34](https://github.com/Vikas-Yadav-79/vikas-docker-blog/assets/121033913/b8f81bb0-4ffd-4b47-a549-f3d32dd71ff9)
 
-Here, change __karan2100__ with your Dockerhub username and __21bcp377-project-image__ with your Dockerhub Repository name.
 
-  
+  That's it now you can see your image on docker hub repoistory
+   -  ![WhatsApp Image 2024-04-24 at 11 47 31](https://github.com/Vikas-Yadav-79/vikas-docker-blog/assets/121033913/38860de4-f686-4056-852c-8af200ca5012)
+
 
 
